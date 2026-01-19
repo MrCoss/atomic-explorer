@@ -10,7 +10,7 @@ export const useGemini = () => {
     setError(null);
     
     try {
-      // Uses the failover system in aihub.js
+      // Connects to OpenRouter via aihub.js
       const response = await sendMessageToGemini(newMessage, history);
       return response;
     } catch (err) {
